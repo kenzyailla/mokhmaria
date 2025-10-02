@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 خلطات لصناعة المخمرية المعطر للجسم - تركيب احترافي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            color: #37474f;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 2px solid #7986cb;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #3949ab 0%, #5c6bc0 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 5px solid #7986cb;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .intro-section {
+            background: #e8eaf6;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border-right: 5px solid #7986cb;
+        }
+        
+        .recipe-section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            background: linear-gradient(135deg, #5c6bc0 0%, #7986cb 100%);
+            color: white;
+            padding: 20px 25px;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 0;
+            font-size: 1.6em;
+        }
+        
+        .recipe-card {
+            background: #fafafa;
+            border: 2px solid #c5cae9;
+            border-radius: 0 0 12px 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .recipe-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e8eaf6;
+        }
+        
+        .recipe-name {
+            font-size: 1.8em;
+            color: #3949ab;
+            font-weight: bold;
+        }
+        
+        .duration-badge {
+            background: #f50057;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .materials-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 25px 0;
+        }
+        
+        .ingredients, .preparation {
+            background: #f3e5f5;
+            padding: 25px;
+            border-radius: 10px;
+            border-right: 4px solid #ba68c8;
+        }
+        
+        h3 {
+            color: #6a1b9a;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .ingredient-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e1bee7;
+        }
+        
+        .ingredient-name {
+            font-weight: 600;
+            color: #4a148c;
+        }
+        
+        .ingredient-quantity {
+            color: #d81b60;
+            font-weight: bold;
+        }
+        
+        .preparation-steps {
+            list-style-type: none;
+            counter-reset: step-counter;
+        }
+        
+        .preparation-steps li {
+            counter-increment: step-counter;
+            margin-bottom: 15px;
+            padding-right: 40px;
+            position: relative;
+            line-height: 1.7;
+        }
+        
+        .preparation-steps li:before {
+            content: counter(step-counter);
+            background: #ba68c8;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: -40px;
+            top: 0;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .chemical-properties {
+            background: #e0f2f1;
+            border: 2px solid #4db6ac;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 25px;
+        }
+        
+        .properties-title {
+            color: #00695c;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .properties-list {
+            list-style-type: none;
+        }
+        
+        .properties-list li {
+            padding: 8px 0;
+            padding-right: 30px;
+            position: relative;
+        }
+        
+        .properties-list li:before {
+            content: "•";
+            color: #00796b;
+            font-size: 1.5em;
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+        
+        .technical-box {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffecb3 100%);
+            border: 2px solid #ffb74d;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .technical-title {
+            color: #e65100;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .safety-section {
+            background: #ffebee;
+            border: 2px solid #ef5350;
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+        
+        .safety-title {
+            color: #c62828;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .material-info {
+            background: #e1f5fe;
+            border: 2px solid #4fc3f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .material-title {
+            color: #0277bd;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #3949ab;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            border-top: 5px solid #7986cb;
+        }
+        
+        @media (max-width: 768px) {
+            .materials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .recipe-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>5 خلطات لصناعة المخمرية المعطر للجسم</h1>
+            <p class="subtitle">تركيبات احترافية تشمل السليكون 350 والجلسرين ومواد كيميائية متخصصة</p>
+        </header>
+        
+        <div class="content">
+            <div class="intro-section">
+                <h2>🎯 المخمرية المعطر الاحترافي</h2>
+                <p>تركيبات متقدمة لصناعة معطرات الجسم باستخدام مواد كيميائية متخصصة مثل السليكون 350 والجلسرين والكحول الإيثيلي لتحقيق نتائج احترافية تدوم طويلاً.</p>
+            </div>
+
+            <!-- معلومات المواد الأساسية -->
+            <div class="technical-box">
+                <h3 class="technical-title">🧪 المواد الأساسية المستخدمة</h3>
+                <div class="material-info">
+                    <div class="material-title">سليكون 350 (Silicone 350)</div>
+                    <p>مادة سيليكونية تعطي نعومة للبشرة وتزيد من انزلاقية المنتج، تحسن انتشار العطر وتثبيته على الجلد.</p>
+                </div>
+                <div class="material-info">
+                    <div class="material-title">جلسرين (Glycerin)</div>
+                    <p>مرطب طبيعي يسحب الرطوبة من الجو إلى البشرة، يحسن قوام المنتج ويساعد في تثبيت الرائحة.</p>
+                </div>
+                <div class="material-info">
+                    <div class="material-title">كحول إيثيلي (Ethanol)</div>
+                    <p>وسيط ناقل للعطور، يساعد في التبخر السريع ويترك الرائحة على الجلد، يطهر البشرة.</p>
+                </div>
+            </div>
+
+            <!-- الخلطة 1 -->
+            <div class="recipe-section">
+                <h2 class="section-title">الخلطة 1: معطر الجسم بالسيليكون المتقدم</h2>
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <div class="recipe-name">تركيبة السيليكون الفاخرة</div>
+                        <div class="duration-badge">مدة التحضير: 24 ساعة</div>
+                    </div>
+                    
+                    <div class="materials-grid">
+                        <div class="ingredients">
+                            <h3>🧴 المكونات الأساسية</h3>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">سليكون 350</span>
+                                <span class="ingredient-quantity">40%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">كحول إيثيلي 96%</span>
+                                <span class="ingredient-quantity">35%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">جلسرين نقي</span>
+                                <span class="ingredient-quantity">15%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">عطر مركز</span>
+                                <span class="ingredient-quantity">8%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">ماء مقطر</span>
+                                <span class="ingredient-quantity">2%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="preparation">
+                            <h3>⚗️ طريقة التصنيع</h3>
+                            <ol class="preparation-steps">
+                                <li>اخلط السليكون 350 مع الجلسرين في وعاء ستانلس ستيل</li>
+                                <li>سخن الخليط إلى 40°م مع التقليب المستمر</li>
+                                <li>أضف الكحول الإيثيلي تدريجياً مع الخلط</li>
+                                <li>اخفض الحرارة إلى 25°م وأضف العطر المركز</li>
+                                <li>أضف الماء المقطر ببطء مع الخلط</li>
+                                <li>اخلط لمدة 30 دقيقة بسرعة 500 rpm</li>
+                                <li>اترك المنتج يرتاح لمدة 24 ساعة قبل التعبئة</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="chemical-properties">
+                        <h3 class="properties-title">📊 الخواص الكيميائية</h3>
+                        <ul class="properties-list">
+                            <li>الكثافة: 0.95 - 1.02 جم/سم³</li>
+                            <li>اللزوجة: 350 - 450 cps</li>
+                            <li>درجة الحموضة: 6.0 - 7.0</li>
+                            <li>مدة الصلاحية: 24 شهر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الخلطة 2 -->
+            <div class="recipe-section">
+                <h2 class="section-title">الخلطة 2: معطر الجسم المرطب</h2>
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <div class="recipe-name">تركيبة الجلسرين المرطبة</div>
+                        <div class="duration-badge">مدة التحضير: 12 ساعة</div>
+                    </div>
+                    
+                    <div class="materials-grid">
+                        <div class="ingredients">
+                            <h3>🧴 المكونات الأساسية</h3>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">جلسرين نباتي</span>
+                                <span class="ingredient-quantity">45%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">كحول إيثيلي 70%</span>
+                                <span class="ingredient-quantity">30%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">سليكون 350</span>
+                                <span class="ingredient-quantity">12%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">بروبيلين جليكول</span>
+                                <span class="ingredient-quantity">8%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">عطر مركز</span>
+                                <span class="ingredient-quantity">5%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="preparation">
+                            <h3>⚗️ طريقة التصنيع</h3>
+                            <ol class="preparation-steps">
+                                <li>اخلط الجلسرين مع البروبيلين جليكول</li>
+                                <li>أضف السليكون 350 مع الخلط بسرعة 400 rpm</li>
+                                <li>سخن الخليط إلى 35°م لمدة 10 دقائق</li>
+                                <li>أضف الكحول الإيثيلي تدريجياً</li>
+                                <li>اخفض الحرارة وأضف العطر المركز</li>
+                                <li>اخلط لمدة 20 دقيقة ثم اتركه يرتاح</li>
+                                <li>صفي المنتج عبر مرشح 5 ميكرون</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="chemical-properties">
+                        <h3 class="properties-title">📊 الخواص الكيميائية</h3>
+                        <ul class="properties-list">
+                            <li>الكثافة: 1.10 - 1.15 جم/سم³</li>
+                            <li>اللزوجة: 200 - 300 cps</li>
+                            <li>درجة الحموضة: 5.5 - 6.5</li>
+                            <li>مدة الصلاحية: 18 شهر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الخلطة 3 -->
+            <div class="recipe-section">
+                <h2 class="section-title">الخلطة 3: معطر الجسم سريع الجفاف</h2>
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <div class="recipe-name">تركيبة التبخر السريع</div>
+                        <div class="duration-badge">مدة التحضير: 6 ساعات</div>
+                    </div>
+                    
+                    <div class="materials-grid">
+                        <div class="ingredients">
+                            <h3>🧴 المكونات الأساسية</h3>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">كحول إيثيلي 96%</span>
+                                <span class="ingredient-quantity">60%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">سليكون 350</span>
+                                <span class="ingredient-quantity">20%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">عطر مركز</span>
+                                <span class="ingredient-quantity">15%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">ايزوبروبيل ميريستات</span>
+                                <span class="ingredient-quantity">5%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="preparation">
+                            <h3>⚗️ طريقة التصنيع</h3>
+                            <ol class="preparation-steps">
+                                <li>اخلط الكحول الإيثيلي مع السليكون 350</li>
+                                <li>أضف ايزوبروبيل ميريستات مع الخلط</li>
+                                <li>اخفض سرعة الخلط إلى 200 rpm</li>
+                                <li>أضف العطر المركز ببطء</li>
+                                <li>اخلط لمدة 15 دقيقة فقط</li>
+                                <li>اترك المنتج يرتاح لمدة 6 ساعات</li>
+                                <li>لا تحتاج إلى تصفية</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="chemical-properties">
+                        <h3 class="properties-title">📊 الخواص الكيميائية</h3>
+                        <ul class="properties-list">
+                            <li>الكثافة: 0.85 - 0.90 جم/سم³</li>
+                            <li>اللزوجة: 50 - 100 cps</li>
+                            <li>درجة الحموضة: 6.5 - 7.5</li>
+                            <li>مدة الصلاحية: 36 شهر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الخلطة 4 -->
+            <div class="recipe-section">
+                <h2 class="section-title">الخلطة 4: معطر الجسم الفاخر</h2>
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <div class="recipe-name">تركيبة اللمسة النهائية</div>
+                        <div class="duration-badge">مدة التحضير: 48 ساعة</div>
+                    </div>
+                    
+                    <div class="materials-grid">
+                        <div class="ingredients">
+                            <h3>🧴 المكونات الأساسية</h3>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">سليكون 350</span>
+                                <span class="ingredient-quantity">35%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">كحول إيثيلي مطلق</span>
+                                <span class="ingredient-quantity">30%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">دايميثيكون</span>
+                                <span class="ingredient-quantity">15%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">جلسرين</span>
+                                <span class="ingredient-quantity">10%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">عطر فاخر</span>
+                                <span class="ingredient-quantity">8%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">فيتامين E</span>
+                                <span class="ingredient-quantity">2%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="preparation">
+                            <h3>⚗️ طريقة التصنيع</h3>
+                            <ol class="preparation-steps">
+                                <li>اخلط السليكون 350 مع الدايميثيكون</li>
+                                <li>سخن الخليط إلى 45°م مع التقليب</li>
+                                <li>أضف الجلسرين وفيتامين E</li>
+                                <li>اخفض الحرارة إلى 30°م</li>
+                                <li>أضف الكحول الإيثيلي تدريجياً</li>
+                                <li>أضف العطر الفاخر ببطء شديد</li>
+                                <li>اتركه يرتاح 48 ساعة في مكان مظلم</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="chemical-properties">
+                        <h3 class="properties-title">📊 الخواص الكيميائية</h3>
+                        <ul class="properties-list">
+                            <li>الكثافة: 0.92 - 0.98 جم/سم³</li>
+                            <li>اللزوجة: 400 - 500 cps</li>
+                            <li>درجة الحموضة: 6.0 - 7.0</li>
+                            <li>مدة الصلاحية: 30 شهر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الخلطة 5 -->
+            <div class="recipe-section">
+                <h2 class="section-title">الخلطة 5: معطر الجسم الاقتصادي</h2>
+                <div class="recipe-card">
+                    <div class="recipe-header">
+                        <div class="recipe-name">تركيبة الإنتاج الكمي</div>
+                        <div class="duration-badge">مدة التحضير: 8 ساعات</div>
+                    </div>
+                    
+                    <div class="materials-grid">
+                        <div class="ingredients">
+                            <h3>🧴 المكونات الأساسية</h3>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">كحول إيثيلي 70%</span>
+                                <span class="ingredient-quantity">50%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">ماء مقطر</span>
+                                <span class="ingredient-quantity">25%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">سليكون 350</span>
+                                <span class="ingredient-quantity">15%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">عطر تجاري</span>
+                                <span class="ingredient-quantity">7%</span>
+                            </div>
+                            <div class="ingredient-item">
+                                <span class="ingredient-name">جلسرين</span>
+                                <span class="ingredient-quantity">3%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="preparation">
+                            <h3>⚗️ طريقة التصنيع</h3>
+                            <ol class="preparation-steps">
+                                <li>اخلط الكحول مع الماء المقطر</li>
+                                <li>أضف السليكون 350 مع الخلط 300 rpm</li>
+                                <li>أضف الجلسرين واستمر في الخلط</li>
+                                <li>اخفض السرعة إلى 150 rpm</li>
+                                <li>أضف العطر التجاري ببطء</li>
+                                <li>اخلط لمدة 10 دقائق فقط</li>
+                                <li>اترك المنتج يرتاح 8 ساعات</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="chemical-properties">
+                        <h3 class="properties-title">📊 الخواص الكيميائية</h3>
+                        <ul class="properties-list">
+                            <li>الكثافة: 0.90 - 0.95 جم/سم³</li>
+                            <li>اللزوجة: 100 - 150 cps</li>
+                            <li>درجة الحموضة: 6.5 - 7.5</li>
+                            <li>مدة الصلاحية: 12 شهر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="safety-section">
+                <h3 class="safety-title">⚠️ إجراءات السلامة</h3>
+                <ul class="properties-list">
+                    <li>ارتداء قفازات ونظارات واقية أثناء التصنيع</li>
+                    <li>العمل في مكان جيد التهوية</li>
+                    <li>تخزين المواد الكيميائية في عبواتها الأصلية</li>
+                    <li>عدم تعريض المنتج لدرجات حرارة عالية</li>
+                    <li>إبعاد المنتج عن مصادر الاشتعال</li>
+                    <li>اختبار المنتج على مساحة صغيرة من الجلد قبل الاستخدام</li>
+                    <li>التأكد من تركيز الكحول المناسب للاستخدام الآمن</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>🔬 هذه التركيبات للأغراض التعليمية - يرجى اتباع إجراءات السلامة والمعايير المحلية</p>
+            <p>للاستخدام التجاري يلزم الحصول على التراخيص الصحية اللازمة</p>
+        </footer>
+    </div>
+</body>
+</html>
