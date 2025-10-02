@@ -14,7 +14,7 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Noto kufi arabic", sans-serif;
             line-height: 1.6;
             background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
             color: #37474f;
@@ -154,8 +154,15 @@
             transform: translateY(-2px);
         }
 
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            display: none;
+        }
+
         .facebook-share-btn {
-            width: 100%;
+            flex: 1;
             background: linear-gradient(135deg, #1877f2 0%, #0d5cb6 100%);
             color: white;
             border: none;
@@ -168,12 +175,31 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
-            margin-top: 10px;
-            display: none;
         }
 
         .facebook-share-btn:hover {
             background: linear-gradient(135deg, #0d5cb6 0%, #0a4a9c 100%);
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-share-btn {
+            flex: 1;
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .whatsapp-share-btn:hover {
+            background: linear-gradient(135deg, #128c7e 0%, #0d6e5a 100%);
             transform: translateY(-2px);
         }
         
@@ -237,7 +263,7 @@
 
         /* إخفاء الأزرار في الصورة المحفوظة */
         .card-for-capture .buttons-container,
-        .card-for-capture .facebook-share-btn,
+        .card-for-capture .social-buttons,
         .card-for-capture .loading,
         .card-for-capture .success-message {
             display: none !important;
@@ -255,6 +281,10 @@
             .buttons-container {
                 flex-direction: column;
             }
+
+            .social-buttons {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -264,7 +294,7 @@
     <div class="container">
         <header>
             <h1>5 خلطات لصناعة المخمرية المعطر للجسم</h1>
-            <p>اختر أي خلطة واحفظها كصورة لنشرها على الفيسبوك</p>
+            <p>اختر أي خلطة واحفظها كصورة لنشرها على الفيسبوك والواتساب</p>
         </header>
         
         <div class="cards-container">
@@ -279,7 +309,7 @@
                     <div class="success-message" id="success1">
                         ✅ تم حفظ الصورة! 
                         <br>
-                        <small>انقر على أيقونة الفيسبوك للمشاركة</small>
+                        <small>اختر المنصة للمشاركة</small>
                     </div>
                     
                     <div class="card-section">
@@ -327,10 +357,16 @@
                         </button>
                     </div>
 
-                    <button class="facebook-share-btn" id="facebookBtn1" onclick="openFacebookShare()">
-                        <i class="fab fa-facebook-f"></i>
-                        شارك على الفيسبوك
-                    </button>
+                    <div class="social-buttons" id="socialButtons1">
+                        <button class="facebook-share-btn" onclick="openFacebookShare()">
+                            <i class="fab fa-facebook-f"></i>
+                            فيسبوك
+                        </button>
+                        <button class="whatsapp-share-btn" onclick="shareOnWhatsApp('card1')">
+                            <i class="fab fa-whatsapp"></i>
+                            واتساب
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -345,7 +381,7 @@
                     <div class="success-message" id="success2">
                         ✅ تم حفظ الصورة! 
                         <br>
-                        <small>انقر على أيقونة الفيسبوك للمشاركة</small>
+                        <small>اختر المنصة للمشاركة</small>
                     </div>
                     
                     <div class="card-section">
@@ -393,10 +429,16 @@
                         </button>
                     </div>
 
-                    <button class="facebook-share-btn" id="facebookBtn2" onclick="openFacebookShare()">
-                        <i class="fab fa-facebook-f"></i>
-                        شارك على الفيسبوك
-                    </button>
+                    <div class="social-buttons" id="socialButtons2">
+                        <button class="facebook-share-btn" onclick="openFacebookShare()">
+                            <i class="fab fa-facebook-f"></i>
+                            فيسبوك
+                        </button>
+                        <button class="whatsapp-share-btn" onclick="shareOnWhatsApp('card2')">
+                            <i class="fab fa-whatsapp"></i>
+                            واتساب
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -411,7 +453,7 @@
                     <div class="success-message" id="success3">
                         ✅ تم حفظ الصورة! 
                         <br>
-                        <small>انقر على أيقونة الفيسبوك للمشاركة</small>
+                        <small>اختر المنصة للمشاركة</small>
                     </div>
                     
                     <div class="card-section">
@@ -455,10 +497,16 @@
                         </button>
                     </div>
 
-                    <button class="facebook-share-btn" id="facebookBtn3" onclick="openFacebookShare()">
-                        <i class="fab fa-facebook-f"></i>
-                        شارك على الفيسبوك
-                    </button>
+                    <div class="social-buttons" id="socialButtons3">
+                        <button class="facebook-share-btn" onclick="openFacebookShare()">
+                            <i class="fab fa-facebook-f"></i>
+                            فيسبوك
+                        </button>
+                        <button class="whatsapp-share-btn" onclick="shareOnWhatsApp('card3')">
+                            <i class="fab fa-whatsapp"></i>
+                            واتساب
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -473,7 +521,7 @@
                     <div class="success-message" id="success4">
                         ✅ تم حفظ الصورة! 
                         <br>
-                        <small>انقر على أيقونة الفيسبوك للمشاركة</small>
+                        <small>اختر المنصة للمشاركة</small>
                     </div>
                     
                     <div class="card-section">
@@ -525,10 +573,16 @@
                         </button>
                     </div>
 
-                    <button class="facebook-share-btn" id="facebookBtn4" onclick="openFacebookShare()">
-                        <i class="fab fa-facebook-f"></i>
-                        شارك على الفيسبوك
-                    </button>
+                    <div class="social-buttons" id="socialButtons4">
+                        <button class="facebook-share-btn" onclick="openFacebookShare()">
+                            <i class="fab fa-facebook-f"></i>
+                            فيسبوك
+                        </button>
+                        <button class="whatsapp-share-btn" onclick="shareOnWhatsApp('card4')">
+                            <i class="fab fa-whatsapp"></i>
+                            واتساب
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -543,7 +597,7 @@
                     <div class="success-message" id="success5">
                         ✅ تم حفظ الصورة! 
                         <br>
-                        <small>انقر على أيقونة الفيسبوك للمشاركة</small>
+                        <small>اختر المنصة للمشاركة</small>
                     </div>
                     
                     <div class="card-section">
@@ -591,10 +645,16 @@
                         </button>
                     </div>
 
-                    <button class="facebook-share-btn" id="facebookBtn5" onclick="openFacebookShare()">
-                        <i class="fab fa-facebook-f"></i>
-                        شارك على الفيسبوك
-                    </button>
+                    <div class="social-buttons" id="socialButtons5">
+                        <button class="facebook-share-btn" onclick="openFacebookShare()">
+                            <i class="fab fa-facebook-f"></i>
+                            فيسبوك
+                        </button>
+                        <button class="whatsapp-share-btn" onclick="shareOnWhatsApp('card5')">
+                            <i class="fab fa-whatsapp"></i>
+                            واتساب
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -606,12 +666,12 @@
             const card = document.getElementById(cardId);
             const loading = document.getElementById(`loading${cardId.slice(-1)}`);
             const success = document.getElementById(`success${cardId.slice(-1)}`);
-            const facebookBtn = document.getElementById(`facebookBtn${cardId.slice(-1)}`);
+            const socialButtons = document.getElementById(`socialButtons${cardId.slice(-1)}`);
             
             // إظهار رسالة التحميل وإخفاء الرسائل الأخرى
             loading.style.display = 'block';
             success.style.display = 'none';
-            facebookBtn.style.display = 'none';
+            socialButtons.style.display = 'none';
             
             try {
                 // إنشاء نسخة من الكارد لإخفاء الأزرار
@@ -620,12 +680,12 @@
                 
                 // إخفاء العناصر غير المرغوبة في النسخة
                 const buttonsContainer = cardClone.querySelector('.buttons-container');
-                const facebookBtnClone = cardClone.querySelector('.facebook-share-btn');
+                const socialButtonsClone = cardClone.querySelector('.social-buttons');
                 const loadingClone = cardClone.querySelector('.loading');
                 const successClone = cardClone.querySelector('.success-message');
                 
                 if (buttonsContainer) buttonsContainer.style.display = 'none';
-                if (facebookBtnClone) facebookBtnClone.style.display = 'none';
+                if (socialButtonsClone) socialButtonsClone.style.display = 'none';
                 if (loadingClone) loadingClone.style.display = 'none';
                 if (successClone) successClone.style.display = 'none';
                 
@@ -656,10 +716,10 @@
                 // إخفاء رسالة التحميل وإظهار رسالة النجاح
                 loading.style.display = 'none';
                 success.style.display = 'block';
-                facebookBtn.style.display = 'flex';
+                socialButtons.style.display = 'flex';
                 
                 // عرض رسالة نجاح
-                showMessage('تم حفظ الصورة! 🎉 انقر على أيقونة الفيسبوك للمشاركة');
+                showMessage('تم حفظ الصورة! 🎉 اختر المنصة للمشاركة');
                 
             } catch (error) {
                 console.error('Error saving image:', error);
@@ -672,6 +732,34 @@
         function openFacebookShare() {
             window.open('https://www.facebook.com/', '_blank');
             showMessage('افتح الفيسبوك وقم برفع الصورة التي تم حفظها 📸');
+        }
+
+        // دالة المشاركة على الواتساب
+        function shareOnWhatsApp(cardId) {
+            const card = document.getElementById(cardId);
+            const title = card.querySelector('.card-title').textContent;
+            const badge = card.querySelector('.card-badge').textContent;
+            const ingredients = card.querySelectorAll('.ingredient-item');
+            
+            let ingredientsText = '';
+            ingredients.forEach(item => {
+                const name = item.querySelector('.ingredient-name').textContent;
+                const quantity = item.querySelector('.ingredient-quantity').textContent;
+                ingredientsText += `• ${name}: ${quantity}\n`;
+            });
+            
+            const properties = card.querySelectorAll('.properties-list li');
+            let propertiesText = '';
+            properties.forEach(item => {
+                propertiesText += `• ${item.textContent}\n`;
+            });
+            
+            const shareText = `🎀 ${title} 🎀\n\n${badge}\n\n🧪 المكونات:\n${ingredientsText}\n📊 الخواص:\n${propertiesText}\n\n#معطر_الجسم #مخمرية #صناعة_التجميل`;
+            
+            const encodedText = encodeURIComponent(shareText);
+            window.open(`https://wa.me/?text=${encodedText}`, '_blank');
+            
+            showMessage('تم فتح الواتساب للمشاركة! 💚');
         }
 
         // دالة المشاركة كنص
